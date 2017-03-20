@@ -2,6 +2,6 @@ extends layout
 
 block content
   h1 Submit a file to view its filesize.
-  form(action="" method="post")
-    input(type="file")
-    button(type="submit") Submit
+  form(action="/upload" enctype="multipart/form-data" method="post")
+    input(type="file" name="file")
+    button(type="submit" value="upload-file") Submit
